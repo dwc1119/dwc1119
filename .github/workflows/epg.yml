@@ -5,7 +5,9 @@ on:
     - cron: 0 4,10,16,22 * * *
     - cron: 36 15,16 * * *
   workflow_dispatch:
-
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
